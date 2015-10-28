@@ -11,7 +11,7 @@
 [downloads-image]: https://img.shields.io/npm/dm/rdfprefix.svg?style=flat
 [downloads-url]: https://npmjs.org/package/rdfprefix
 
-RDF and Json-ld prefix utility
+RDF Prefix helper to expand and compact iri (compatible with json-ld context)
 
 ## Features
 

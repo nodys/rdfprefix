@@ -1,6 +1,6 @@
 {
   "name": "rdfprefix",
-  "description": "RDF and Json-ld prefix utility",
+  "description": "RDF Prefix helper to expand and compact iri (compatible with json-ld context)",
   "version": "0.0.0",
   "author": "Jean Ponchon <jean.ponchon@novadiscovery.com>",
   "repository": {
