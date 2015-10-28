@@ -89,6 +89,16 @@ prefix.toContext() // -> { '@vocab': 'http://purl.org/dc/terms/abstract', schema
 
 ```
 
+## Test coverage
+
+|  |  |
+| ------------ | -------------- |
+| Statements   | 100% ( 76/76 ) |
+| Branches     | 100% ( 52/52 ) |
+| Functions    | 100% ( 14/14 ) |
+| Lines        | 100% ( 76/76 ) |
+
+
 ## Credit & great tools
 
   - See the fabulous [N3](https://github.com/RubenVerborgh/N3.js) library by @RubenVerborgh

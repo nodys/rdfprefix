@@ -9,5 +9,4 @@ npm-debug.log
 # Ignore node modules
 /node_modules/*
 
-# Node module exceptions (for application only)
-#!/node_modules/express
+/coverage

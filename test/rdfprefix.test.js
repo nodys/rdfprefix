@@ -218,14 +218,16 @@ describe('rdfprefix', function () {
       expect(prefixes.compact('http://schema.org/')).to.be.eql('schema')
     })
 
+    it('should be a passthrough if no prefix found', function () {
+      var prefixes = rdfprefix({ 'schema': 'http://schema.org/' })
+      expect(prefixes.compact('http://example.org/name')).to.be.eql('http://example.org/name')
+    })
+
     it('should compact an iri based on vocabulary', function () {
       var prefixes = rdfprefix({
-        '@vocab': 'http://schema.org/',
-        'example': 'http://example.org/',
-        'name': 'example:name'
+        '@vocab': 'http://schema.org/'
       })
-      expect(prefixes.compact('http://example.org/name')).to.be.eql('name')
-      expect(prefixes.expand(prefixes.compact('http://example.org/name'))).to.be.eql('http://example.org/name')
+      expect(prefixes.compact('http://schema.org/name')).to.be.eql('name')
     })
 
     it('should use prefix over vocabulary', function () {

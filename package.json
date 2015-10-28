@@ -22,7 +22,7 @@
     "monitor": "mocha --reporter spec --watch",
     "debugtest": "mocha --debug-brk --reporter spec",
     "standard": "./node_modules/.bin/standard",
-    "coverage": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- -R spec ./test/index.js"
+    "coverage": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- -R spec ./test/rdfprefix.test.js"
   },
   "dependencies": {},
   "devDependencies": {
